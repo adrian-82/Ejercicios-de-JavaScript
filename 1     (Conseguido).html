@@ -1,0 +1,39 @@
+
+	<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="content-type"
+             content="text/html;charset=utf-8">
+        <title>Ejercicio 1</title>
+    </head>
+    <body>
+        <p>Escriba una función JavaScript que invierta un número.<br>
+
+        Ejemplo x = 32243<br>
+        
+        Salida esperada : 34223</p>
+
+
+    <script type="text/javascript">
+
+    
+	var entrada = prompt ("Inserte el número a invertir...por favor!");
+	var entradaInvertida = "";
+
+	document.write(invertir(entrada));
+
+
+
+function invertir(entrada){
+
+    for(var i = entrada.length; i>=1 ; i--){                                  // Recorro la cadena desde el final
+  
+      entradaInvertida = entrada[entrada.length-i] + entradaInvertida;      // Formo la nueva cadena.
+    }
+    return entradaInvertida;                                                // Retorno la nueva cadena.
+}
+
+    </script>
+    </body>
+    </html>
+

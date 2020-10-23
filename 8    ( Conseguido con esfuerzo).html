@@ -1,0 +1,57 @@
+
+	<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="content-type"
+             content="text/html;charset=utf-8">
+        <title>Ejercicio 1</title>
+    </head>
+    <body>
+        <p>8. Escribir una función de JavaScript para extraer caracteres únicos de una cadena. <br>
+
+            Cadena de ejemplo: "thequickbrownfoxjumpsoverthelazydog" <br>
+            
+            Salida esperada: "thequickbrownfxjmpsvlazydog"</p>
+
+
+    <script type="text/javascript">
+
+var entrada = prompt ("Inserte los caracteres a extraer, por favor!");
+
+var caracteresAquitar=entrada.split("");
+
+
+var cadenaPredeterminada="thequickbrownfxjmpsvlazydog";
+
+var caracteresCadenaPredeterminada=cadenaPredeterminada.split("");
+
+document.write(extraerCaracteres(entrada));
+
+
+function extraerCaracteres(caracteresAquitar){
+
+var avance=0;
+var salida=[];
+
+            for(var j=0; j<=caracteresCadenaPredeterminada.length-1; j++){
+
+                 caracterAvalorar=caracteresCadenaPredeterminada[j,j];
+
+                if(caracteresAquitar.includes(caracterAvalorar)){     // true)
+
+                    avance++;
+
+                }else{
+
+                    salida[avance]=caracterAvalorar;
+                    avance++;
+                }
+
+}
+var salidaFinal=salida.join("");
+return salidaFinal;
+}
+
+</script>
+</body>
+</html>

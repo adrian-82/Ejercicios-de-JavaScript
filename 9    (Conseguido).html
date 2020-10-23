@@ -1,0 +1,50 @@
+
+
+	<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="content-type"
+             content="text/html;charset=utf-8">
+        <title>Ejercicio 1</title>
+    </head>
+    <body>
+        <p>9. Escribir una función de JavaScript que genere una cadena (de longitud especificada) de caracteres aleatorios.
+
+            Ejemplo de lista de caracteres válidos: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"</p>
+
+
+    <script type="text/javascript">
+
+var caracteres="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+var longitud=prompt("Introduce la longitud de la cadena, por favor!");
+var aleatorio;
+var cadenaFinal=[];
+var salida;
+
+generaCadena(longitud);
+
+
+
+    document.write(salida);
+
+
+
+function generaCadena(longitud){
+
+    
+
+    for(var i = 0; i<=longitud ; i++){
+        aleatorio = Math.round(Math.random()*62);
+
+        cadenaFinal[i]=caracteres.substring(aleatorio,aleatorio+1);
+    }
+
+    salida=cadenaFinal.join("");
+return salida;
+}
+
+
+
+</script>
+    </body>
+    </html>

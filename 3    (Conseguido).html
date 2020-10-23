@@ -1,0 +1,41 @@
+
+	<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="content-type"
+             content="text/html;charset=utf-8">
+        <title>Ejercicio 3</title>
+    </head>
+    <body>
+        <p>3. Escriba una función JavaScript que devuelva una cadena pasada con letras en orden alfabético. <br>
+
+            Cadena de ejemplo: "webmaster <br>
+            
+            Salida esperada: 'abeemrstw'. <br>     
+
+            Supongamos que los símbolos de puntuación y números no están incluidos en la cadena pasada.
+            </p>
+
+
+    <script type="text/javascript">
+
+var entrada = prompt ("Inserte una cadena, por favor!");
+
+var entradaEnArray=entrada.split("");
+
+document.write(ordenar(entradaEnArray));
+
+
+function ordenar(entradaEnArray){
+    
+    entradaEnArray.sort();
+    return entradaEnArray.join("");
+}
+
+
+
+
+</script>
+</body>
+</html>
+

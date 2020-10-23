@@ -1,0 +1,64 @@
+
+	<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="content-type"
+             content="text/html;charset=utf-8">
+        <title>Ejercicio 3</title>
+    </head>
+    <body>
+        <p>4. Escriba una función JavaScript que acepte una cadena como parámetro y encuentre la palabra más larga dentro de la cadena. <br>
+
+            Cadena de ejemplo: 'Tutorial de desarrollo web'. <br>
+            
+            Resultado esperado: "Desarrollo".
+            </p>
+<script>
+
+var entrada = prompt ("Inserte una frase, por favor!");
+
+
+document.write(masLarga(entrada));
+
+
+function masLarga(entrada){
+
+var longitudMax=0;
+var longi;
+
+
+    var cascos = entrada.split(" ");
+
+    for(var i=0; i<=cascos.length-1; i++){   // Recorremos todos los cascos
+
+        longi=cascos[i].length;
+
+            if(longi>longitudMax){
+
+                longitudMax=longi;
+
+            }
+
+    }
+
+    for(var i=0; i<=cascos.length-1; i++){
+
+        if(cascos[i].length==longitudMax){
+
+            var f=i;
+            break;
+        }
+
+    }
+
+    return cascos[f];
+}
+
+
+
+
+
+</script>
+</body>
+</html>
+

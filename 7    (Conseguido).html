@@ -1,0 +1,66 @@
+
+	<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="content-type"
+             content="text/html;charset=utf-8">
+        <title>Ejercicio 3</title>
+    </head>
+    <body>
+        <p>7. Escribir una función de JavaScript para convertir una cantidad X de dinero en monedas. <br>
+
+            A la función se le deben pasar los valores de las monedas en las que queremos cambiar mediante un array <br>
+
+            Función de la muestra : cantodadMonedas(46, [25, 10, 5, 2, 1])  <br>
+            
+            Aquí 46 es la cantidad. y 25, 10, 5, 2, 1 son las monedas.  <br>
+            
+            Salida: 25, 10, 10, 1
+            </p>
+<script>
+
+var entrada = prompt ("Inserte la cantidad, por favor!");
+
+
+var valores=[];
+var monedas=[25,10,5,2,1];
+
+
+
+
+cantodadMonedas( entrada, monedas );
+
+
+for(var i=0; i<=valores.length-1; i++){
+
+document.write( valores[i] + ", ");
+}
+
+
+
+function cantodadMonedas(entrada, monedas){
+   
+    var valor=entrada;
+    var j=0;
+
+    for(var i=0; i<=monedas.length-1; i++){
+       
+
+        if (valor>=monedas[i]){
+            valor=valor-monedas[i];
+
+            valores[j] = monedas[i];
+            j++;
+            i=0;
+        }
+        
+    }
+
+return valores;
+
+}
+
+
+</script>
+</body>
+</html>

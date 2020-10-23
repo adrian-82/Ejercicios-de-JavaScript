@@ -1,0 +1,56 @@
+
+	<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="content-type"
+             content="text/html;charset=utf-8">
+        <title>Ejercicio 5</title>
+    </head>
+    <body>
+        <p>5. Escribe una función de JavaScript que acepte una cadena como parámetro y cuente el número de vocales dentro de la cadena. <br>
+
+            Ejemplo de cadena: "El rápido zorro marrón" <br>
+            
+            Producción esperada: 8
+            </p>
+<script>
+
+var entrada = prompt ("Inserte una frase, por favor!");
+var letrinas=entrada.split("");
+var cantidadVocales=0;
+
+
+document.write(numVocales(letrinas));
+
+function numVocales(letrinas){
+
+    for(var i=0; i<=letrinas.length-1; i++){   // Recorremos todos las letras
+
+        if(letrinas[i].toLowerCase() == 'a' || 
+        letrinas[i].toLowerCase() == 'e' ||
+        letrinas[i].toLowerCase() == 'i' ||
+        letrinas[i].toLowerCase() == 'o' ||
+        letrinas[i].toLowerCase() == 'u' ||
+            letrinas[i].toLowerCase() == 'á' ||
+            letrinas[i].toLowerCase() == 'é' ||
+            letrinas[i].toLowerCase() == 'í' ||
+            letrinas[i].toLowerCase() == 'ó' ||
+            letrinas[i].toLowerCase() == 'ú' ) {
+
+            cantidadVocales++;
+
+        }
+
+    
+}
+return cantidadVocales;
+
+}
+
+
+
+
+</script>
+</body>
+</html>
+

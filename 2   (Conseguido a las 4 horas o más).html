@@ -1,0 +1,70 @@
+
+	<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="content-type"
+             content="text/html;charset=utf-8">
+        <title>Ejercicio 2</title>
+    </head>
+    <body>
+        <p>2. Escribir una función de JavaScript que genere todas las combinaciones de una cadena. <br>
+
+            Cadena de ejemplo: "pan" <br>
+            
+            Salida esperada: p, pa, pan, a, an, n
+            </p>
+
+
+    <script type="text/javascript">
+
+    
+var entrada = prompt ("Inserte una cadena, por favor!");
+
+document.write(entrada + "<br>");
+
+document.write(partir(entrada));
+
+function partir(entrada){
+ var avance=0;
+var numCaract=0;
+
+    for(var i=0; i<=entrada.length; i++){  
+
+        var salida="";
+        var salida1="";
+        var numCaract=0;
+        
+        document.write( entrada.substring(i,i+1) + ", ");     // Muestra una sola letra, la que comienza
+        salida=entrada.substring(i,i+1);
+        
+        for(var j=0; j<=entrada.length-2; j++){
+
+                casco=entrada.substr((j+1)+avance,(j+1)-numCaract);
+
+                if(entrada.substr((j+1)+avance,(j+1)-numCaract)!=""){
+
+                    document.write (salida + casco);
+                salida=salida+casco;
+
+                document.write(", ");
+           
+            numCaract++;
+
+
+
+                }
+
+              
+           
+ 
+        }
+        avance++;   
+    }
+}
+    /*document.write("<p>La suma de los números múltiplos de 23 inferiores a 1000 es: " +suma+"<p>");
+    
+    alert('La suma de los números múltiplos de 23 inferiores a 1000 es: ' +suma);
+    alert('GRACIAS!');*/
+    </script>
+    </body>
+    </html>

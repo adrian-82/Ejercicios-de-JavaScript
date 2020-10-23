@@ -1,0 +1,76 @@
+PO0302 Probando tu nuevo entorno de desarrollo
+1. Escriba una función JavaScript que invierta un número. 
+
+Ejemplo x = 32243;
+
+Salida esperada : 34223
+
+
+
+2. Escribir una función de JavaScript que genere todas las combinaciones de una cadena.
+
+Cadena de ejemplo: "pan"
+
+Salida esperada: p, pa, pan, a, an, n
+
+
+
+3. Escriba una función JavaScript que devuelva una cadena pasada con letras en orden alfabético.
+
+Cadena de ejemplo: "webmaster
+
+Salida esperada: 'abeemrstw'.
+
+Supongamos que los símbolos de puntuación y números no están incluidos en la cadena pasada.
+
+
+
+4. Escriba una función JavaScript que acepte una cadena como parámetro y encuentre la palabra más larga dentro de la cadena. 
+
+Cadena de ejemplo: 'Tutorial de desarrollo web'.
+
+Resultado esperado: "Desarrollo".
+
+
+
+5. Escribe una función de JavaScript que acepte una cadena como parámetro y cuente el número de vocales dentro de la cadena. 
+
+Ejemplo de cadena: "El rápido zorro marrón"
+
+Producción esperada: 8
+
+
+
+6. Escriba una función JavaScript que acepte un argumento y devuelva el tipo.
+
+Nota: Hay seis posibles valores que el tipo de retornos: objeto, booleano, función, número, cadena e undefined.
+
+
+
+
+
+7. Escribir una función de JavaScript para convertir una cantidad X de dinero en monedas. A la función se le deben pasar los valores de las monedas en las que queremos cambiar mediante un array
+
+Función de la muestra : cantodadMonedas(46, [25, 10, 5, 2, 1])
+
+Aquí 46 es la cantidad. y 25, 10, 5, 2, 1 son las monedas.
+
+Salida: 25, 10, 10, 1
+
+
+
+
+
+8. Escribir una función de JavaScript para extraer caracteres únicos de una cadena.
+
+Cadena de ejemplo: "thequickbrownfoxjumpsoverthelazydog"
+
+Salida esperada: "thequickbrownfxjmpsvlazydg"
+
+
+
+
+
+9. Escribir una función de JavaScript que genere una cadena (de longitud especificada) de caracteres aleatorios.
+
+Ejemplo de lista de caracteres válidos: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
